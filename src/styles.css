@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+:root {
+    --main-color: #f7f9fe;
+    --second-color: #fff;
+    --head-color: #394B6C;
+    --head-second-color: #4B6691;
+    --head-third-color: #FF5363;
+    --pop-text-color: #2a81ea;
+    --pop-hover-color: #165fb8;
+    --pop-light-color: #73E3ff;
+    --normal-font-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.1s all ease-in-out;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--main-color);
+}
+
+.container-m {
+    width: 90%;
+    margin: auto;
+}
+
+.darkMood {
+    min-width: 50px;
+    min-height: 50px;
+    font-size: 20px;
+    background-color: var(--pop-text-color);
+    color: #fff;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.251);
+    z-index: 10;
+}
+
+::-webkit-scrollbar {
+    width: 0.3vw;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ ::-webkit-scrollbar-track {
+    background: var(--main-color);
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--pop-text-color);
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: var(--pop-hover-color);
+}
+
+@media only screen and (max-width: 769px) {
+    .container-m {
+        width: 100%;
+    }
+}
+
+/*-------------Transmission-----------------*/
+
+/*-----------Transmission-Global------------*/
+.transmission {
+    background-color: var(--second-color);
+    min-height: 100vh;
+    padding: 4em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--normal-font-color);
+}
+
+.transmission h4 {
+    color: var(--pop-text-color);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.transmission h3 {
+    font-weight: 900;
+    font-family: 'Oswald';
+    font-size: 42px;
+    color: var(--pop-hover-color);
+    text-align: center;
+}
+
+.transmission .prag {
+    max-width: 80%;
+    text-align: center;
+}
+
+.transmission .cards {
+    margin: 2vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.transmission .cards .inner {
+    padding: 5px 10px;
+}
+
+.transmission .cards .inner div div {
+    background-color: var(--second-color);
+    padding: 30px 30px 10px 30px;
+}
+
+.transmission .cards .inner div img {
+    width: 100%;
+    border-bottom: 5px solid var(--pop-text-color);
+}
+
+.transmission .cards .inner div h5 {
+    color: var(--pop-text-color);
+    font-size: 18px;
+    font-family: 300;
+}
+
+.transmission .cards .inner div p {
+    line-height: 1.5em;
+    font-size: 15px;
+}
+
+.questBTN {
+    margin: 3em 0 0 0;
+}
+
+.questBTN button {
+    background-color: var(--pop-text-color);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    transition: 0.3s all ease-in-out;
+}
+
+.questBTN button * {
+    color: #fff;
+}
+
+.questBTN button:hover {
+    background-color: var(--pop-hover-color);
+}
+
+.questBTN button i {
+    margin-right: 5px;
+}

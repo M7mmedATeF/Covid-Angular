@@ -1,0 +1,173 @@
+footer {
+    min-height: 70vh;
+    background-image: linear-gradient(20deg, #18223d, 30%, #151C2E);
+}
+
+footer * {
+    color: #b2bfe0;
+}
+
+footer .layout {
+    background-image: url('../../assets/photos/shape-a.png');
+    background-size: cover;
+    width: 100%;
+    min-height: 70vh;
+}
+
+footer .layout hr {
+    border: 1px solid #b2bfe0;
+}
+
+footer .layout .innerFooter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 5em;
+}
+
+footer .layout .innerFooter>div {
+    padding: 0 10px;
+}
+
+footer .layout .innerFooter .main h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+footer .layout .innerFooter .main h1 i {
+    padding: 0 1px;
+    color: var(--head-third-color);
+}
+
+footer .layout .innerFooter .main p {
+    margin: 20px 0;
+    font-size: 13px;
+    color: #b2bfe0;
+}
+
+footer .layout .innerFooter .main .links {
+    font-size: 36px;
+}
+
+footer .layout .innerFooter .main .links a {
+    margin: 0 5px;
+    color: #b2bfe0;
+    transition: 0.3s all ease-in-out;
+}
+
+footer .layout .innerFooter .main .links a:hover {
+    color: #768cc4;
+}
+
+footer .layout .innerFooter .qLinks h4 {
+    font-weight: 700;
+    color: #fff;
+}
+
+footer .layout .innerFooter .qLinks .links ul {
+    list-style: none;
+    padding: 10px 0 0 0;
+}
+
+footer .layout .innerFooter .qLinks .links ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+footer .layout .innerFooter .helpLinks .links ul li {
+    padding: 5px 0;
+}
+
+footer .layout .innerFooter .qLinks .links ul li:hover {
+    color: #768cc4;
+}
+
+footer .layout .copyRight {
+    color: #b2bfe0;
+    font-size: 14px;
+    padding: 4em 0;
+}
+
+footer .layout .copyRight span {
+    color: #fff;
+    font-family: 'oswald';
+}
+
+footer .layout .main .colorizing {
+    display: flex;
+    align-items: center;
+}
+
+footer .layout .main .colorizing div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1c54ce;
+    margin: 0 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+footer .layout .main .colorizing div p {
+    opacity: 0;
+}
+
+footer .layout .main .colorizing div:after {
+    content: attr(titleName);
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    font-size: 14px;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+footer .layout .main .colorizing div:hover:after {
+    opacity: 0.9;
+}
+
+footer .layout .main .colorizing .blue:after {
+    background-color: var(--pop-text-color);
+}
+
+footer .layout .main .colorizing .blue:after {
+    background-color: #2a81ea;
+}
+
+footer .layout .main .colorizing .red:after,
+footer .layout .main .colorizing .red {
+    background-color: #e61f33;
+}
+
+footer .layout .main .colorizing .purble:after,
+footer .layout .main .colorizing .purble {
+    background-color: #e70f62;
+}
+
+footer .layout .main .colorizing .cyan:after,
+footer .layout .main .colorizing .cyan {
+    background-color: #0fe79f;
+}
+
+@media only screen and (max-width: 769px) {
+    footer .layout .innerFooter .qLinks h4 {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    footer .layout .innerFooter>div {
+        width: 100%;
+    }
+}
